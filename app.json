@@ -19,10 +19,26 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.malikhaider.googlePay"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "39a355a3-31fa-4a56-8f34-1ef407010772"
+      }
+    },
+    "plugins": [
+      [
+        "@google/react-native-make-payment",
+        {
+          "merchantName": "Development",
+          "merchantId": "BCR2DN4T77JPH4JJ",
+          "environment": "TEST"
+        }
+      ]
+    ]
   }
 }
